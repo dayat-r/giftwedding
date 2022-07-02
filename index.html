@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=The+Nautigal&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        @media only screen and (max-width: 900px) {
+            .gridRek {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 24px;
+            }
+        }
+
+        @media only screen and (min-width: 600px) {
+            .gridRek {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+        }
+
+        @media only screen and (min-width: 901px) {
+            .gridRek {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 24px;
+            }
+        }
+
+        p {
+            margin: 0;
+            font-family: 'Plus Jakarta Sans';
+        }
+
+        .titleRek {
+            color: grey;
+        }
+
+        .layoutRek {
+            text-align: center;
+            border: 1px solid grey;
+            border-radius: 20px;
+            padding: 24px 16px;
+
+        }
+
+
+
+        .imgRek {
+            width: 100%;
+            min-height: 100px;
+
+        }
+
+        .titleName {
+            font-size: 90px;
+            font-family: 'The Nautigal', cursive;
+            text-shadow: 2px 2px #ffffff;
+            color: #525252;
+        }
+
+        .btnCopy {
+            background-color: #DAA520;
+            color: white;
+            border-radius: 5px;
+            border: 0;
+            padding: 2px 4px;
+            font-size: 14px;
+            font-family: 'Plus Jakarta Sans';
+        }
+
+        .titleRek {
+            font-family: 'Plus Jakarta Sans';
+            font-size: 14px;
+        }
+
+        .anRek {
+            font-family: 'Plus Jakarta Sans';
+            font-size: 16px;
+        }
+
+        .noRek {
+            font-family: 'Plus Jakarta Sans';
+        }
+
+        .weddingGift {
+            font-family: 'Dancing Script';
+            margin-top: 20px;
+            font-size: 24px;
+        }
+
+        h6 {
+            margin: 0;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <script>
+        function copyRek(rek) {
+            var copyText = rek;
+            navigator.clipboard.writeText(copyText);
+            alert("Copy to clipboard : " + copyText);
+        }
+    </script>
+    <div>
+        <div style="height: 350px;width: 100%;position: relative;">
+            <img style="height: 350px;width: 100%;object-fit: cover;"
+                src="https://img.freepik.com/free-photo/concept-wedding-accessories-with-wedding-rings-white-wooden-background_185193-69932.jpg?w=2000"
+                alt="">
+            <div style="position: absolute;top: 0;text-align: center;width: 100%;height: 350px;display: flex;align-items: center;justify-content: center;">
+                <div >
+
+                    <p class="weddingGift">Wedding Gift</p>
+                    <h6 class="titleName">Dayat & Zahra</h6>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center;width: 100%;margin-top: 10px;">
+
+            <p style="color: grey;">Thank you for taking pleasure in sending gifts for our wedding. Gifts can be sent
+                via bank transfer to the following account :</p>
+        </div>
+        <div style="width: 100%;margin-top: 20px;">
+            <div class="gridRek">
+                <div class="layoutRek">
+                    <img class="imgRek"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Bank_Central_Asia.svg/1280px-Bank_Central_Asia.svg.png"
+                        alt="logo bca">
+                    <div style="display: flex;justify-content: space-around;margin-top: 10px;">
+                        <div style="display: flex;width: fit-content;gap: 8px;align-items: center;">
+                            <p class="noRek">No. 0322438948</p>
+                            <button class="btnCopy" onclick="copyRek('0322438948')">Salin</button>
+                        </div>
+                    </div>
+                    <p class="titleRek">Atas nama</p>
+                    <p class="anRek">Hidayaturrahman</p>
+                </div>
+                <div class="layoutRek">
+                    <img class="imgRek"
+                        src="https://rekreartive.com/wp-content/uploads/2019/04/Logo-BNI-Bank-Negara-Indonesia-46-Vector-.png"
+                        alt="logo bni">
+                    <div style="display: flex;justify-content: space-around;margin-top: 10px;">
+                        <div style="display: flex;width: fit-content;gap: 8px;align-items: center;">
+                            <p class="noRek">No. 0900887838</p>
+                            <button class="btnCopy" onclick="copyRek('0900887838')">Salin</button>
+                        </div>
+                    </div>
+
+                    <p class="titleRek">Atas nama</p>
+                    <p class="anRek">Zahra Ramadhani</p>
+                </div>
+                <div class="layoutRek">
+                    <img class="imgRek"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/BRI_2020.svg/2560px-BRI_2020.svg.png"
+                        alt="logo bri">
+                    <div style="display: flex;justify-content: space-around;margin-top: 10px;">
+                        <div style="display: flex;width: fit-content;gap: 8px;align-items: center;">
+                            <p class="noRek">No. 7241 0100 8483 534</p>
+                            <button class="btnCopy" onclick="copyRek('724101008483534')">Salin</button>
+                        </div>
+                    </div>
+                    <p class="titleRek">Atas nama</p>
+                    <p class="anRek">Hidayaturrahman</p>
+                </div>
+                <div class="layoutRek">
+                    <img class="imgRek"
+                        src="https://3.bp.blogspot.com/-wS96HfUzkjE/Wp6knmaMVVI/AAAAAAAAOlg/DT_Vi6cIE3IEbmmj3RvXAe1KDlRD8DmPgCLcBGAs/s1600/Logo-Bank-Pembangunan-Daerah-Sumatera-Barat-transparent.png"
+                        alt="logo nagari">
+                    <div style="display: flex;justify-content: space-around;margin-top: 10px;">
+                        <div style="display: flex;width: fit-content;gap: 8px;align-items: center;">
+                            <p class="noRek">No. 0602 0210 0507 56</p>
+                            <button class="btnCopy" onclick="copyRek('06020210050756')">Salin</button>
+                        </div>
+                    </div>
+
+                    <p class="titleRek">Atas nama</p>
+                    <p class="anRek">Zahra Ramadhani</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
